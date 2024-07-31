@@ -88,10 +88,8 @@ This is a pilot workshop, testing out a lesson that is still under development. 
 {% endif %}
 
 {% comment %}
-{% endcomment %}
 AUDIENCE
-
-This workshop is for employees of the MN DNR.
+{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
