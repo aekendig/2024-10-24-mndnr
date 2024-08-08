@@ -4,7 +4,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "MN DNR"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Carlos Avery State Wildlife Management Area"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Online: you'll be sent a Teams link; In-person: Carlos Avery State Wildlife Management Area conference room, 5463 W Broadway Ave, Wyoming, MN 55092"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "45.288428"        # decimal latitude of workshop venue (use https://www.latlong.net/)
@@ -14,7 +14,7 @@ humantime: "9:00 am - 4:30 pm CDT"    # human-readable times for the workshop e.
 startdate: 2024-10-24      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-10-24        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Amy Kendig", "Alex Bajcz"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Véronique St-Louis"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Véronique St-Louis", "Dave Staples"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["amy.kendig@state.mn.us"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 ---
@@ -147,7 +147,7 @@ This block displays the date and links to Google Calendar.
 <p id="when">
   <strong>When:</strong>
   {{page.humandate}}; {{page.humantime}}
-  {% include workshop_calendar.html %}
+  You will receive an Outlook meeting invitation upon registration.
 </p>
 {% endif %}
 
@@ -159,13 +159,13 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
+    In-person participants must bring a laptop. All participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  They should install two programs -- R and RStudio -- from the Software Center. Please contact MNIT if you need help installing these programs.
+  All participants should install two programs prior to the workshop -- R and RStudio -- from the Software Center. Please contact MNIT if you need help installing these programs.
 </p>
 
 {% comment %}
@@ -225,7 +225,7 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  to register and for more information.
 </p>
 
 <p id="roles">
@@ -385,7 +385,7 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described below.
+  you will need access to R and RStudio.
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
@@ -404,9 +404,7 @@ If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instructions.
 {% endcomment %}
-{% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
 
 {% comment %}
 These are the installation instructions for the tools used
