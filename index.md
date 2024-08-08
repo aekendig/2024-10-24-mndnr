@@ -159,7 +159,7 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
-    In-person participants must bring a laptop. All participants must have access to a computer with a
+    In-person participants must bring a laptop and a lunch. All participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
   {% else %}
     Participants must have access to a computer with a
