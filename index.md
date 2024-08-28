@@ -165,7 +165,7 @@ Modify the block below if there are any special requirements.
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  All participants should install two programs prior to the workshop -- R and RStudio -- from the Software Center. Please contact MNIT if you need help installing these programs.
+  All participants should install RStudio from the Software Center prior to the workshop. See below for specific installation instructions.
 </p>
 
 {% comment %}
