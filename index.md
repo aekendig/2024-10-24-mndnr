@@ -391,7 +391,7 @@ please preview your site before committing, and make sure to run
   </p>
   <p>
   <ul>
-    <li>Download RStudio from Software Center.</li> 
+    <li>Download RStudio from <a href="http://intranet.dnr.state.mn.us/dnrit-services/compsec/install-sccm.html">Software Center</a>.</li> 
     <li>During installation, you will be prompted to choose an R version. Choose the one with the highest number.</li> 
     <li>After installation, find RStudio in your Windows menu and open it. You will need to change a setting to properly download packages during the lesson. Go to the Tools Menu > select "Global Options" > select "Packages" from the list on the left > click the "Change" button next to "Primary CRAN repository" > select USA (TN) [https] - National Institute for Computational Sciences, Oak Ridge. Apply changes and close the Global Options.</li>
   </ul>
